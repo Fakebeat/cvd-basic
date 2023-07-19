@@ -557,7 +557,7 @@
 
 
 
-/*-----UPDATES----*/
+/*-----UPDATES__LEFT----*/
 .updates{
   background: #ffffff;
   padding-top: 13rem;
@@ -618,6 +618,84 @@
 
 
 
+/*-----UPDATES__RIGHT----*/
+.updates__right__item h3{
+  color: #ffa700;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+.updates__right__item table{
+  width: 100%;
+}
+.updates__right__item table tr td:last-child{
+  text-align: right;
+}
+.updates__right__item table tr{
+  height: 7rem;
+}
+.updates__right__item table tr td{
+  font-size: 2rem;
+}
+.updates__right__item:first-child{
+  padding-bottom: 5rem;
+  border-bottom: 1px solid gray;
+}
+.updates__right__item:not(:first-child,:last-child){
+  padding: 5rem 0;
+  border-bottom: 1px solid gray;
+}
+.updates__right__item:last-child{
+  padding: 5rem 0;
+}
+.updates__right__item__content{
+  display: flex;
+  gap: 2rem;
+}
+.updates__right__item__content:not(:first-child){
+  margin-top: 5rem;
+}
+.updates__right__text h4{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.updates__right__btn a{
+  margin: 1.5rem;
+}
+@media screen and (max-width:500px){
+  .updates__title{
+    text-align: center;
+  }
+  .updates__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .updates__left__item ul li{
+    font-size: 1.2rem;
+  }
+  .updates__left__item__text{
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .updates__left__item__text p{
+    text-align: justify;
+  }
+  .updates__right__item h3{
+    text-align: center;
+  }
+  .updates__right__item{
+    margin: 0 2rem;
+  }
+  .updates__right__btn{
+    text-align: center;
+  }
+}
+
+
+
+
 
 /*----REPEATABLE PATTERS-----*/
 .btn{
@@ -644,6 +722,16 @@
   border: 1px solid #2b2b2b;
   color: black;
   transition: 1s ease;
+}
+.btn.light{
+  background: #ffffff;
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+}
+.btn.dark:hover{
+  background: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  color: #ffffff;
 }
 
 
