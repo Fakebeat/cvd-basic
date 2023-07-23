@@ -347,6 +347,9 @@
   padding: 5rem 0;
   background: #2b2b2b;
 }
+.ltreands__wrapper{
+
+}
 .ltreands .ltreands__title h2{
   color: #ffa700;
   font-size: 3rem;
@@ -387,6 +390,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 8rem;
+  gap: 5rem;
 }
 .ltreands__card img{
   width: 100%;
@@ -724,8 +728,79 @@
     align-items: center;
     gap: 2.5rem;
     color: #ffa700;
-    font-size: 5rem;
+    font-size: 3rem;
 }
+@media screen and (max-width:500px){
+  .abtme__text{
+    order: 2;
+    text-align: center;
+    margin: 0 2rem;
+    margin-top: 3rem;
+  }
+  .abtme__wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .abtme__text ul{
+    order: 2;
+    text-align: center;
+    margin: 0 2rem;
+    margin-top: 3rem;
+  }
+  }
+
+
+
+
+/*-----CNTACT----*/
+.cntact{
+  padding-top: 13rem;
+  padding-bottom: 5rem;
+  background: black;
+}
+.banner .banner__wrapper{
+  display: grid;
+  grid-template-columns:2fr 2fr;
+  align-items: center;
+}
+.cntact__text h1{
+  font-size: 8rem;
+  font-weight: 800;
+  color: #ffa700;
+  line-height: 1.2;
+  max-width: 45rem;
+}
+.cntact__text p{
+  color: #ffffff;
+  margin: 4rem 0;
+  max-width: 45rem;
+  text-align: justify;
+}
+.cntact__wrapper a{
+  color: #ffffff;
+  line-height: 5rem;
+  gap: 1rem;
+}
+.cntact__text__text{
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.cntact__tecxt form{
+  display: grid;
+  grid-template-columns: 2fr;
+}
+.cntact__rght form{
+  display: grid;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 300px;
+}
+
+
+
 
 
 
