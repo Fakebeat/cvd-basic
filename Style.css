@@ -814,6 +814,34 @@
   font-weight: 600;
   color: #ffa700;
 }
+@media screen and (max-width:500px){
+  .services__item .services__content:nth-child(odd),.services__item .services__content:nth-child(even){
+    display: flex;
+    flex-direction: column;
+      gap: 5rem; 
+  }
+  .services__item image{
+    width: 25rem;
+  }
+  .services__content{
+    margin: 0 2rem;
+    text-align: center;
+  }
+  .services__content p{
+    text-align: center;
+  }
+  .services__text h1{
+    font-size: 2.5rem;
+  }
+  .services__price p:last-child{
+    font-size: 1.2rem;
+    max-width: 15rem;
+    margin: auto;
+  }
+  .services__price{
+    margin: 3rem 0;
+  }
+}
 
 
 
