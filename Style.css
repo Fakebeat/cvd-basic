@@ -77,6 +77,7 @@
     padding: 0;
     vertical-align: baseline;
     scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
     list-style: none;
   }
   
@@ -262,6 +263,7 @@
   max-width: 45rem;
   text-align: justify;
 }
+
 @media screen and (max-width:500px){
 .banner .banner__wrapper{
   display:grid;
@@ -573,10 +575,10 @@
   font-weight: 600;
 }
 .updates__wrapper{
-  display: grid;
-  grid-template-columns: 2.5fr 1.5fr;
-  grid-gap: 5rem;
-  margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-gap: 5rem;
+    margin-top: 10rem;
 }
 .updates__left__item:first-child{
   padding-bottom: 5rem;
@@ -747,58 +749,116 @@
     margin: 0 2rem;
     margin-top: 3rem;
   }
-  }
+}
 
 
 
 
-/*-----CNTACT----*/
+
+/*-----SERVICES----*/
+.services__content{
+  display: flex;
+  align-items: center;
+  max-width: 130rem;
+  margin: 0 auto;
+  gap: 30rem;
+}
+.services__item:nth-child(even){
+  background: #2b2b2b;
+}
+.services__item:nth-child(even) p{
+  color: #ffffff;
+}
+.services__item:nth-child(odd){
+  background: #ffffff;
+}
+.services__item:nth-child(odd) .services__content{
+  flex-direction: row-reverse;
+}
+.services__item{
+  padding: 5rem 0;
+}
+.services__item:first-child{
+  padding-top: 16rem;
+  padding-bottom: 8rem;
+}
+.services__text h1{
+  color: #ffa700;
+  font-size: 5rem;
+  font-weight: 800;
+}
+.services__text p{
+  margin: 2rem 0;
+}
+.services__item ul{
+  display: flex;
+  gap: 2rem;
+}
+.services__price p{
+  margin: 0;
+}
+.services__price p:last-child{
+  font-size: 1.2rem;
+  max-width: 15rem;
+}
+.services__price h2{
+  color: #ffa700;
+  font-size:3rem;
+  font-weight: 700;
+}
+.services .chevron{
+  text-align: center;
+}
+.services .chevron i{
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ffa700;
+}
+
+
+
+
+
+
+/*-----CONTACT----*/
 .cntact{
   padding-top: 13rem;
   padding-bottom: 5rem;
   background: black;
 }
-.banner .banner__wrapper{
-  display: grid;
-  grid-template-columns:2fr 2fr;
-  align-items: center;
-}
-.cntact__text h1{
+.cntact__title h2{
   font-size: 8rem;
   font-weight: 800;
   color: #ffa700;
   line-height: 1.2;
   max-width: 45rem;
 }
-.cntact__text p{
-  color: #ffffff;
-  margin: 4rem 0;
-  max-width: 45rem;
-  text-align: justify;
+.cntact__wrapper{
+color: #ffffff;
+display: flex;
+grid-gap: 5rem;
+margin-top: 10rem;
 }
-.cntact__wrapper a{
-  color: #ffffff;
-  line-height: 5rem;
+.cntact__left__item ul{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin: 1rem 0;
+}
+.cntact__left__item ul li{
+  display: flex;
+  align-items: center;
   gap: 1rem;
 }
-.cntact__text__text{
-  display: flex;
-  gap: 2rem;
-  font-size: 2rem;
-}
-.cntact__tecxt form{
+.cntact__left__icon ul li{
+  color: white;
   display: grid;
-  grid-template-columns: 2fr;
 }
-.cntact__rght form{
+.cntact__right form{
   display: grid;
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  max-width: 300px;
+  grid-template-columns:2fr 2fr;
+  align-items: center;
 }
-
 
 
 
@@ -809,7 +869,7 @@
   display: inline-block;
   padding: 1.5rem;
   border-radius: 5rem;
-  border: 1px solid transparent;
+  border: 1px solid transparent; 
 }
 .btn.yellow{
   background: #ffa700;
